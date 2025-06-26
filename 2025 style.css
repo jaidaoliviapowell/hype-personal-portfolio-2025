@@ -1,0 +1,70 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  background-color: #f9e7f6;
+  margin: 1rem;
+  font-family: cursive;
+  line-height: 1.5;
+
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Navigation bar with flexbox and box model*/
+.container {
+  display: flex;
+  justify-content: center; /* Center nav horizontally */
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid #f1c6ef;
+  background-color: #fcebfb;
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}2
+
+.nav-item {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: #f9e7e7;
+  background-color: pink;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+img{
+
+}
+.spotify-player{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column-reverse; 
+}
